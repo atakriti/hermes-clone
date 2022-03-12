@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <title>Hermes-Clone</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div>
+          <span><a href="#">Privatkunden</a></span>
+          <span><a href="#">Geschäftskunden</a></span>
+        </div>
+      </div>
+
+     <div class="nav">
+          <nav>
+            <div class="logo">
+              <a href="#"><img src="./images/hermes-logo.svg" alt="" /></a>
+            </div>
+            <ul>
+              <li><a href="#">Start</a></li>
+              <li>
+                <a href="#">Versenden</a><i class="fa-solid fa-angle-down"></i>
+              </li>
+              <li>
+                <a href="#">Empfangen</a><i class="fa-solid fa-angle-down"></i>
+              </li>
+              <li><a href="#">Preise</a><i class="fa-solid fa-angle-down"></i></li>
+              <li><a href="#">Service</a><i class="fa-solid fa-angle-down"></i></li>
+            </ul>
+            <button>
+              <i class="fa-solid fa-user"></i>
+              <span>|</span>
+              Mein Konto
+            </button>
+          </nav>
+     </div>
+    </header>
+    <div class="bg-info">
+      <div class="bg">
+        <img src="./images/bg.jpg" alt="" />
+      </div>
+      <div class="bg-nav">
+        <ul>
+          <li><a href="#">Paketschein erstellen</a></li>
+          <li><a href="#">Sendung verflogen</a></li>
+          <li><a href="#">PaketShop finden</a></li>
+        </ul>
+      </div>
+      <div class="info">
+        <form action="">
+          <div class="questions">
+              <div class="wohin">
+                <p>Wohin möchtest Du versenden?</p>
+                <select value="deutschland">
+                  <option selected name="deutschland" id="1">Deutschland</option>
+                  <option name="türkei" id="2">Türkei</option>
+                  <option name="ägypten" id="3">Ägypten</option>
+                  <option name="oman" id="4">Oman</option>
+                </select>
+              </div>
+              
+              <div class="welche">
+                  <p>Welche Maße (in cm) hat deine Sendung?</p>
+                  <span>
+                      <input placeholder="Länge" type="text">
+                      <input placeholder="Breite" type="text">
+                      <input placeholder="Höhe" type="text">
+                  </span>
+              </div>
+          </div>
+          <button>Paketschein ertellen</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
