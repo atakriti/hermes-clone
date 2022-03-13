@@ -1,0 +1,29 @@
+header{
+    .nav{
+
+        nav{
+            ul{
+                .versenden{
+                    position: relative;
+                    .versand-info{
+                        position: absolute;
+                        top: 100%;
+                        left: 0%;
+                        right:0;
+                        width: 100%;
+                        
+                        background-color: $gray;
+                        z-index: 4;
+                        .container-info{
+                            display: flex;
+                            div{
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
