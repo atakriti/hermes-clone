@@ -1,0 +1,140 @@
+main{
+    width: 60%;
+    margin: 5% auto ;
+    .three-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 32%;
+            background-color: $gray;
+           a{
+            img{
+                width: 100%;
+                
+            }
+           }
+            .three-container-text{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 9vw;
+                padding: 4%;
+                h2{
+                    font-size: 1.1vw;
+                    font-weight: bold;
+                    color: $blue;
+                }
+                p{
+                    font-size: 0.9vw;
+                }
+                span{
+                    i{
+                        color: $blue;
+                        font-size: 0.7vw;
+                        margin-left: 2%;
+                    }
+                    a{
+                        font-size: 0.8vw;
+                        text-decoration: none;
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+
+    // ================= Versand info ===============
+    .versand-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 8% 0;
+        p{
+            font-size: 1.4vw;
+            text-align: center;
+            margin-bottom: 6%;
+            color: $blue;
+        }
+        .rows-container{
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 21%;
+                height: 9vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                svg{
+                    width: 4vw;
+                    height: 4vw;
+                    border-radius: 50%;
+                    background-color: $gray;
+                    fill: $blue;
+                }
+                h2{
+                    font-size: 1vw;
+                    font-weight: lighter;
+                    color: $blue;
+                }
+                p{
+                    font-size: 0.9vw;
+                }
+            }
+        }
+    }
+    // =================== Two images ==============
+    .two-images{
+        display: flex;
+        justify-content: space-between;
+      a{
+          border: 1px red solid;
+          width: 40%;
+          display: flex;
+          position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+       
+      }
+    }
+    // ========== versand-leistung ==================
+    .versand-leistung{
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+        h2{
+            font-size: 1.4vw;
+            color: $blue;
+            text-align: center;
+            margin-bottom: 4%;
+            font-weight: lighter;
+        }
+        .versand-leistung-images{
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 6vw;
+                svg{
+                    width: 4vw;
+                    height: 4vw;
+                    background-color: $blue;
+                    fill: white;
+                }
+                p{
+                    font-size: 0.9vw;
+                }
+            }
+        }
+    }
+}
