@@ -141,13 +141,15 @@ main{
                     background-color: $blue;
                     fill: white;
                 }
-                p{
+                a{
                     font-size: 0.9vw;
+                    text-decoration: none;
+                    color: black;
                 }
                 &:hover svg{
                     background-color: $btn-blue;
                 }
-                &:hover p{
+                &:hover a{
                     text-decoration: underline;
                 }
             }
