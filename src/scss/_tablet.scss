@@ -1,0 +1,22 @@
+@media only screen and (min-width: 760px) and (orientation: landscape) {
+    main{
+        .versand-leistung{
+            .versand-leistung-images{
+                div{
+                    height: 20vw;
+                }
+            }
+        }
+    }
+    footer{
+        .footer-bottom{
+            padding: 3% 5%;
+            .footer-left{
+                width: 50%;
+            }
+            .footer-right{
+                width: 40%;
+            }
+        }
+    }
+}
