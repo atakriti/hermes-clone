@@ -705,7 +705,6 @@ header .nav nav ul .versenden .versand-info .container-info div {
 }
 @media only screen and (min-width: 760px) and (orientation: landscape) {
   main .versand-leistung .versand-leistung-images a {
-    border: 1px red solid;
     width: 100%;
     text-align: center;
   }
@@ -717,7 +716,7 @@ header .nav nav ul .versenden .versand-info .container-info div {
     width: 50%;
   }
   footer .footer-bottom .footer-right {
-    width: 40%;
+    width: 30%;
   }
 }
 
