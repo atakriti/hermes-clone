@@ -8,6 +8,7 @@
         z-index: -1;
         img{
             width: 100%;
+            // in precentige very important the height
          height: 113.5%;                   
          }       
     }
@@ -92,20 +93,24 @@
                     font-size: 1vw;
                     color: $blue;
                    }
-                   input{
-                       width: 30%;
-                       padding: 2%;
-                       font-size: 1vw;
-                       &:focus{                     
-                           box-shadow: 0px 0px 6px $blue;
-                       }
-                       
+                   span{
+                       display: flex;
+                       justify-content: space-between;
+                    input{
+                        width: 30%;
+                         padding: 2%;
+                        font-size: 1vw;
+                        &:focus{                     
+                            box-shadow: 0px 0px 6px $blue;
+                        }
+                        
+                    }
                    }
                }
            }
            button{
-               margin-top: 2%;
-               margin-right: 0.8%;
+               margin-top: 4%;
+               
                width: 20%;
                align-self: flex-end;
                font-size: 0.8vw;
