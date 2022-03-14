@@ -3,7 +3,12 @@
         .versand-leistung{
             .versand-leistung-images{
                 div{
-                    height: 20vw;
+                    
+                }
+                a{
+                    border: 1px red solid;
+                    width: 100%;
+                    text-align: center;
                 }
             }
         }
