@@ -1,0 +1,705 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .top-header {
+  background-color: #0091cd;
+  width: 100%;
+  height: 2vw;
+}
+header .top-header div {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .top-header div span {
+  height: 100%;
+  padding: 0 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .top-header div span a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8vw;
+}
+header .top-header div span:first-child {
+  background-color: white;
+}
+header .top-header div span:first-child a {
+  color: #0091cd;
+}
+header .top-header div span:hover {
+  background-color: white;
+}
+header .top-header div span:hover a {
+  color: black;
+}
+header .nav {
+  width: 100%;
+  background-color: white;
+}
+header .nav nav {
+  width: 60%;
+  height: 4vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav nav .logo {
+  width: 12%;
+}
+header .nav nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+header .nav nav ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  cursor: pointer;
+}
+header .nav nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1vw;
+}
+header .nav nav ul li i {
+  color: #0091cd;
+  font-size: 0.8vw;
+}
+header .nav nav ul li:hover a {
+  color: #0091cd;
+}
+header .nav nav button {
+  display: flex;
+  width: 13%;
+  height: 50%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8vw;
+  color: white;
+  background-color: #0483b9;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+header .nav nav button i {
+  font-size: 0.8vw;
+}
+header .nav nav button span {
+  font-size: 1.3vw;
+  font-weight: lighter;
+}
+header .nav nav button:active {
+  box-shadow: 0px 0px 6px #0091cd;
+}
+
+.bg-info {
+  width: 100%;
+}
+.bg-info .bg {
+  width: 60%;
+  height: 14.7vw;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+.bg-info .bg img {
+  width: 100%;
+  height: 113.5%;
+}
+.bg-info .bg-nav {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.bg-info .bg-nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.bg-info .bg-nav ul li {
+  background-color: rgba(0, 0, 0, 0.664);
+  list-style: none;
+  width: 40%;
+  padding: 1% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-info .bg-nav ul li a {
+  color: white;
+  font-size: 1vw;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.bg-info .bg-nav ul li:first-child {
+  background-color: #ebebec;
+}
+.bg-info .bg-nav ul li:first-child a {
+  color: #0091cd;
+}
+.bg-info .bg-nav ul li:hover {
+  background-color: #ebebec;
+}
+.bg-info .bg-nav ul li:hover a {
+  color: #0091cd;
+}
+.bg-info .info {
+  width: 100%;
+  background-color: #ebebec;
+  padding: 3% 0;
+}
+.bg-info .info form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.bg-info .info form .questions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bg-info .info form .questions .wohin {
+  width: 50%;
+}
+.bg-info .info form .questions .wohin p {
+  font-size: 1vw;
+  color: #0091cd;
+}
+.bg-info .info form .questions .wohin select {
+  width: 100%;
+  padding: 1% 0;
+  font-size: 1vw;
+  cursor: pointer;
+}
+.bg-info .info form .questions .wohin select:focus {
+  box-shadow: 0px 0px 6px #0091cd;
+}
+.bg-info .info form .questions .welche {
+  width: 40%;
+}
+.bg-info .info form .questions .welche p {
+  font-size: 1vw;
+  color: #0091cd;
+}
+.bg-info .info form .questions .welche span {
+  display: flex;
+  justify-content: space-between;
+}
+.bg-info .info form .questions .welche span input {
+  width: 30%;
+  padding: 2%;
+  font-size: 1vw;
+}
+.bg-info .info form .questions .welche span input:focus {
+  box-shadow: 0px 0px 6px #0091cd;
+}
+.bg-info .info form button {
+  margin-top: 4%;
+  width: 20%;
+  align-self: flex-end;
+  font-size: 0.8vw;
+  padding: 0.8% 0;
+  background-color: #e9530e;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+.bg-info .info form button:active {
+  box-shadow: 0px 0px 6px #e9530e;
+}
+.bg-info .info form button:hover {
+  background-color: #ca4d12;
+}
+
+main {
+  width: 60%;
+  margin: 5% auto;
+}
+main .three-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main .three-container div {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  background-color: #ebebec;
+}
+main .three-container div a img {
+  width: 100%;
+}
+main .three-container div .three-container-text {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 9vw;
+  padding: 4%;
+}
+main .three-container div .three-container-text h2 {
+  font-size: 1.1vw;
+  font-weight: bold;
+  color: #0091cd;
+}
+main .three-container div .three-container-text p {
+  font-size: 0.9vw;
+}
+main .three-container div .three-container-text span i {
+  color: #0091cd;
+  font-size: 0.7vw;
+  margin-left: 2%;
+}
+main .three-container div .three-container-text span a {
+  font-size: 0.8vw;
+  text-decoration: none;
+  color: #0091cd;
+}
+main .three-container div .three-container-text span a:hover {
+  text-decoration: underline;
+}
+main .versand-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 8% 0;
+}
+main .versand-info p {
+  font-size: 1.4vw;
+  text-align: center;
+  margin-bottom: 6%;
+  color: #0091cd;
+}
+main .versand-info .rows-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .versand-info .rows-container div {
+  width: 21%;
+  height: 9vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+main .versand-info .rows-container div svg {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  background-color: #ebebec;
+  fill: #0091cd;
+}
+main .versand-info .rows-container div h2 {
+  font-size: 1vw;
+  font-weight: lighter;
+  color: #0091cd;
+  margin-top: 3%;
+}
+main .versand-info .rows-container div p {
+  font-size: 0.9vw;
+  color: black;
+  margin-top: 3%;
+}
+main .two-images {
+  display: flex;
+  justify-content: space-between;
+}
+main .two-images a {
+  width: 40%;
+  display: flex;
+  position: relative;
+}
+main .two-images a img {
+  width: 100%;
+  height: 80%;
+}
+main .versand-leistung {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 0;
+}
+main .versand-leistung h2 {
+  font-size: 1.4vw;
+  color: #0091cd;
+  text-align: center;
+  margin-bottom: 4%;
+  font-weight: lighter;
+}
+main .versand-leistung .versand-leistung-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .versand-leistung .versand-leistung-images div {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 6vw;
+  cursor: pointer;
+}
+main .versand-leistung .versand-leistung-images div svg {
+  width: 4vw;
+  height: 4vw;
+  background-color: #0091cd;
+  fill: white;
+}
+main .versand-leistung .versand-leistung-images div p {
+  font-size: 0.9vw;
+}
+main .versand-leistung .versand-leistung-images div:hover svg {
+  background-color: #0483b9;
+}
+main .versand-leistung .versand-leistung-images div:hover p {
+  text-decoration: underline;
+}
+
+footer .footer-top {
+  background-color: #3c3c41;
+}
+footer .footer-top .footer-top-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .footer-top .footer-top-container div {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-top .footer-top-container div p {
+  font-size: 1.2vw;
+  color: #0091cd;
+  margin-bottom: 3%;
+}
+footer .footer-top .footer-top-container div a {
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+  margin-bottom: 4%;
+}
+footer .footer-top .footer-top-container div a:hover {
+  color: #0091cd;
+  text-decoration: underline;
+}
+footer .footer-top .footer-top-container .checked-texts span {
+  display: flex;
+  align-items: baseline;
+}
+footer .footer-top .footer-top-container .checked-texts span i {
+  color: green;
+  font-size: 1vw;
+}
+footer .footer-top .footer-top-container .checked-texts span p {
+  color: white;
+  font-size: 1vw;
+  margin-left: 3%;
+}
+footer .footer-bottom {
+  background-color: #333;
+  display: flex;
+  padding: 3% 15%;
+}
+footer .footer-bottom .footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  margin-right: 10%;
+}
+footer .footer-bottom .footer-left p {
+  font-size: 1vw;
+  color: gray;
+  margin-bottom: 3%;
+}
+footer .footer-bottom .footer-left .footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-bottom .footer-left .footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8vw;
+}
+footer .footer-bottom .footer-left .footer-links a:hover {
+  color: #0091cd;
+  text-decoration: underline;
+}
+footer .footer-bottom .footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15%;
+}
+footer .footer-bottom .footer-right p {
+  font-size: 1vw;
+  color: gray;
+  margin-bottom: 3%;
+}
+footer .footer-bottom .footer-right .footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-bottom .footer-right .footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8vw;
+}
+footer .footer-bottom .footer-right .footer-links a:hover {
+  color: #0091cd;
+  text-decoration: underline;
+}
+
+header .nav nav ul .versenden {
+  position: relative;
+}
+header .nav nav ul .versenden .versand-info {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #ebebec;
+  z-index: 1;
+}
+header .nav nav ul .versenden .versand-info .container-info {
+  display: flex;
+}
+header .nav nav ul .versenden .versand-info .container-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+  header .top-header {
+    height: 5vw;
+  }
+  header .top-header div {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  header .top-header div span a {
+    font-size: 1.8vw;
+  }
+  header .nav nav {
+    width: 100%;
+    margin: 0;
+    height: 8vw;
+    padding: 0 1%;
+  }
+  header .nav nav .logo {
+    width: 15%;
+  }
+  header .nav nav ul {
+    width: 70%;
+  }
+  header .nav nav ul li a {
+    font-size: 1.8vw;
+  }
+  header .nav nav ul li i {
+    font-size: 1.8vw;
+  }
+  header .nav nav button {
+    font-size: 1.4vw;
+  }
+  header .nav nav button i {
+    font-size: 1.4vw;
+  }
+  header .nav nav button span {
+    font-size: 1.6vw;
+  }
+
+  .bg-info .bg {
+    width: 100%;
+    height: 30vw;
+  }
+  .bg-info .bg-nav {
+    width: 100%;
+  }
+  .bg-info .bg-nav ul {
+    width: 100%;
+  }
+  .bg-info .bg-nav ul li a {
+    font-size: 1.8vw;
+  }
+  .bg-info .info form .questions {
+    flex-direction: column;
+    height: 18vw;
+  }
+  .bg-info .info form .questions .wohin {
+    width: 100%;
+  }
+  .bg-info .info form .questions .wohin p {
+    font-size: 1.8vw;
+    margin-bottom: 1%;
+  }
+  .bg-info .info form .questions .wohin select {
+    font-size: 1.8vw;
+  }
+  .bg-info .info form .questions .welche {
+    width: 100%;
+  }
+  .bg-info .info form .questions .welche p {
+    font-size: 1.8vw;
+    margin-bottom: 1%;
+  }
+  .bg-info .info form .questions .welche span input {
+    font-size: 1.8vw;
+    padding: 1%;
+  }
+  .bg-info .info form button {
+    font-size: 1.4vw;
+    width: 40%;
+  }
+
+  main {
+    width: 100%;
+  }
+  main .three-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  main .three-container div {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  main .three-container div .three-container-text {
+    height: 12vw;
+  }
+  main .three-container div .three-container-text h2 {
+    font-size: 2.8vw;
+  }
+  main .three-container div .three-container-text p {
+    font-size: 1.8vw;
+  }
+  main .three-container div .three-container-text span i {
+    font-size: 1.8vw;
+  }
+  main .three-container div .three-container-text span a {
+    font-size: 1.8vw;
+  }
+  main .versand-info p {
+    font-size: 2.8vw;
+  }
+  main .versand-info .rows-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  main .versand-info .rows-container div {
+    width: 49%;
+    margin-bottom: 4%;
+    height: 22vw;
+  }
+  main .versand-info .rows-container div svg {
+    width: 10vw;
+    height: 10vw;
+  }
+  main .versand-info .rows-container div h2 {
+    font-size: 2.3vw;
+  }
+  main .versand-info .rows-container div p {
+    font-size: 1.8vw;
+  }
+  main .two-images {
+    width: 70%;
+    margin: 0 auto;
+  }
+  main .versand-leistung {
+    width: 70%;
+    margin: 10% auto;
+  }
+  main .versand-leistung h2 {
+    font-size: 2.8vw;
+  }
+  main .versand-leistung .versand-leistung-images div {
+    width: 32%;
+    margin-bottom: 4%;
+    height: 15vw;
+  }
+  main .versand-leistung .versand-leistung-images div svg {
+    width: 10vw;
+    height: 10vw;
+  }
+  main .versand-leistung .versand-leistung-images div p {
+    font-size: 1.8vw;
+  }
+
+  footer .footer-top .footer-top-container div {
+    width: 49%;
+    margin-bottom: 4%;
+    padding-left: 5%;
+  }
+  footer .footer-top .footer-top-container div p {
+    font-size: 2.3vw;
+  }
+  footer .footer-top .footer-top-container div a {
+    font-size: 1.8vw;
+  }
+  footer .footer-top .footer-top-container .checked-texts {
+    width: 100%;
+    padding: 0;
+  }
+  footer .footer-top .footer-top-container .checked-texts span i {
+    font-size: 1.8vw;
+  }
+  footer .footer-top .footer-top-container .checked-texts span p {
+    font-size: 1.8vw;
+  }
+  footer .footer-bottom {
+    padding: 3% 10%;
+  }
+  footer .footer-bottom .footer-left {
+    width: 48%;
+  }
+  footer .footer-bottom .footer-left p {
+    font-size: 1.8vw;
+  }
+  footer .footer-bottom .footer-left .footer-links a {
+    font-size: 1.4vw;
+  }
+  footer .footer-bottom .footer-right {
+    width: 48%;
+  }
+  footer .footer-bottom .footer-right p {
+    font-size: 1.8vw;
+  }
+  footer .footer-bottom .footer-right .footer-links a {
+    font-size: 1.4vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
