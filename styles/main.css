@@ -373,13 +373,15 @@ main .versand-leistung .versand-leistung-images div svg {
   background-color: #0091cd;
   fill: white;
 }
-main .versand-leistung .versand-leistung-images div p {
+main .versand-leistung .versand-leistung-images div a {
   font-size: 0.9vw;
+  text-decoration: none;
+  color: black;
 }
 main .versand-leistung .versand-leistung-images div:hover svg {
   background-color: #0483b9;
 }
-main .versand-leistung .versand-leistung-images div:hover p {
+main .versand-leistung .versand-leistung-images div:hover a {
   text-decoration: underline;
 }
 
