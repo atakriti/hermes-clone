@@ -656,7 +656,7 @@ header .nav nav ul .versenden .versand-info .container-info div {
     width: 10vw;
     height: 10vw;
   }
-  main .versand-leistung .versand-leistung-images div p {
+  main .versand-leistung .versand-leistung-images div a {
     font-size: 1.8vw;
   }
 
@@ -701,6 +701,21 @@ header .nav nav ul .versenden .versand-info .container-info div {
   }
   footer .footer-bottom .footer-right .footer-links a {
     font-size: 1.4vw;
+  }
+}
+@media only screen and (min-width: 760px) and (orientation: landscape) {
+  main .versand-leistung .versand-leistung-images div {
+    height: 20vw;
+  }
+
+  footer .footer-bottom {
+    padding: 3% 5%;
+  }
+  footer .footer-bottom .footer-left {
+    width: 50%;
+  }
+  footer .footer-bottom .footer-right {
+    width: 40%;
   }
 }
 
